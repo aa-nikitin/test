@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
   try {
     const bbbb = await getList();
 
-    res.send('asdas - ' + bbbb);
+    res.send(bbbb);
   } catch (e) {
     res.status(400).json({ error: e });
   }
